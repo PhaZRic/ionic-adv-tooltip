@@ -3,5 +3,31 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "ionic-adv-tooltip": {
+      "projectType": "library",
+      "root": "projects/ionic-adv-tooltip",
+      "sourceRoot": "projects/ionic-adv-tooltip/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ionic-adv-tooltip/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ionic-adv-tooltip/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:karma",
+          "options": {
+            "tsConfig": "projects/ionic-adv-tooltip/tsconfig.spec.json"
+          }
+        }
+      }
+    }
   }
 }

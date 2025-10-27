@@ -1,0 +1,10 @@
+/* Keep popover lightweight and click-through by default */
+ion-popover.app-tooltip-popover::part(content){
+  pointer-events: none !important;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+  max-width: 360px;
+  max-height: 70vh;
+}
+ion-popover.app-tooltip-popover { pointer-events: none !important; }

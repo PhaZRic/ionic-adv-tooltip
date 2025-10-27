@@ -1,0 +1,15 @@
+<div
+  class="tooltip-wrap"
+  [style.maxWidth.px]="maxWidth"
+  [style.background]="bg || null"
+>
+  @if (componentType) {
+    <ng-template #host></ng-template>
+  } @else {
+    @if (template) {
+      <ng-container [ngTemplateOutlet]="template"></ng-container>
+    } @else {
+      <div class="tooltip-text">{{ text }}</div>
+    }
+  }
+</div>

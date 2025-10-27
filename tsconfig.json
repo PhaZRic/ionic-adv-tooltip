@@ -5,6 +5,11 @@
   "compilerOptions": {
     "strict": true,
     "noImplicitOverride": true,
+    "paths": {
+      "ionic-adv-tooltip": [
+        "./dist/ionic-adv-tooltip"
+      ]
+    },
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
@@ -22,5 +27,13 @@
     "typeCheckHostBindings": true,
     "strictTemplates": true
   },
-  "files": []
+  "files": [],
+  "references": [
+    {
+      "path": "./projects/ionic-adv-tooltip/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ionic-adv-tooltip/tsconfig.spec.json"
+    }
+  ]
 }

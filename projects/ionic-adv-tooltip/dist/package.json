@@ -1,0 +1,52 @@
+{
+  "name": "@phazric/ionic-adv-tooltip",
+  "version": "0.1.0",
+  "description": "Ionic Advanced Tooltip: rich, media-friendly tooltip/popover for Ionic Angular (templates, videos, component previews).",
+  "author": "Riccardo Ordine",
+  "license": "MIT",
+  "keywords": [
+    "Ionic Advanced Tooltip",
+    "ionic tooltip",
+    "ionic popover",
+    "rich tooltip",
+    "hovercard",
+    "angular"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhaZRic/ionic-adv-tooltip.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PhaZRic/ionic-adv-tooltip/issues"
+  },
+  "homepage": "https://github.com/PhaZRic/ionic-adv-tooltip#readme",
+  "sideEffects": false,
+  "peerDependencies": {
+    "@angular/common": ">=16 <21",
+    "@angular/core": ">=16 <21",
+    "@ionic/angular": ">=6 <9"
+  },
+  "exports": {
+    "./styles/*": "./styles/*",
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./fesm2022/phazric-ionic-adv-tooltip.mjs"
+    }
+  },
+  "style": "./styles/tooltip.css",
+  "files": [
+    "fesm2022",
+    "styles",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "module": "fesm2022/phazric-ionic-adv-tooltip.mjs",
+  "typings": "index.d.ts",
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
