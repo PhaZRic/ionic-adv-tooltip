@@ -43,7 +43,6 @@ export class AdvTooltipDirective implements OnDestroy {
   @Input() iatDirection: TooltipSide = 'auto';
   @Input() iatAlign: TooltipAlign = 'center';
 
-  /** NEW: Popover visual customization */
   @Input() iatPopoverBg?: string;               // CSS color (e.g., '#222', 'rgba(...)', 'var(--ion-color-light)')
   @Input() iatPopoverWidth?: number | string;   // number => px, or CSS string (e.g., '28rem', '80vw')
   @Input() iatPopoverMinWidth?: number | string;
