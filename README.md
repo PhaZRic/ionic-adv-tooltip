@@ -4,7 +4,7 @@
 > Works on any host (`span`, `ion-item`, `ion-chip`, `ion-button`, ...).  
 > **Angular 16–20** · **Ionic 6–8**
 
-[![npm version](https://img.shields.io/npm/v/@phazric/ionic-adv-tooltip.svg?color=45CE6A&logo=npm)](https://www.npmjs.com/package/@phazric/ionic-adv-tooltip)
+[![npm version](https://img.shields.io/npm/v/@phazric/ionic-adv-tooltip.svg?color=45CE6A&logo=npm)](https://www.npmjs.com/package/ionic-adv-tooltip)
 ![Angular](https://img.shields.io/badge/Angular-16--20-red?logo=angular)
 ![Ionic](https://img.shields.io/badge/Ionic-6--8-blue?logo=ionic)
 ![License](https://img.shields.io/badge/License-MIT-green)
