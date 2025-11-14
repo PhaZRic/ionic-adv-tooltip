@@ -65,15 +65,87 @@ export class DemoComponent {}
 </ng-template>
 ```
 
-### 3️⃣ Component tooltip
+### 3️⃣ Component tooltip 
 ```html
 <div
   [iatEnableComponent]="true"
-  [iatComponent]="PreviewCardComponent"
-  [iatComponentInputs]="{ title: 'Hello Tooltip' }">
+  [iatComponent]="TestComponent"
+  [iatComponentInputs]="{ title: 'Hello Tooltip' }"
+  [iatDirection]="'right'"
+  [iatMaxWidth]="260"
+  >
   Hover here
 </div>
 ```
+
+```ts
+import { Component} from '@angular/core';
+import { AdvTooltipDirective } from 'ionic-adv-tooltip';
+import { TestComponent } from '../test/test.component';
+
+@Component({
+  selector: 'app-home',
+  standalone: true,
+  imports: [AdvTooltipDirective], 
+  templateUrl: './home.page.html',
+  styleUrls: ['home.page.scss'],
+})
+export class HomePage {
+
+  protected  TestComponent = TestComponent
+
+}
+
+```
+
+```ts
+
+import { Component, Input, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-test',
+  templateUrl: './test.component.html',
+  standalone: true,
+  styleUrls: ['./test.component.scss'],
+})
+export class TestComponent  implements OnInit {
+  @Input() title: string = 'Default title';
+
+  constructor() { }
+
+  ngOnInit() {}
+
+}
+
+```
+
+>If you are using NgModules instead of standalone components, make sure you also import the directive and the preview component in the parent module where the tooltip is used:
+
+```ts
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { IonicModule } from '@ionic/angular';
+
+import { HomePage } from './home.page';
+import { AdvTooltipDirective } from 'ionic-adv-tooltip';
+import { TestComponent } from '../test/test.component';
+
+@NgModule({
+  declarations: [HomePage],
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    AdvTooltipDirective,
+    TestComponent
+  ]
+})
+export class HomePageModule {}
+
+
+```
+
 
 ---
 
