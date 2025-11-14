@@ -1,6 +1,6 @@
 {
-  "name": "@phazric/ionic-adv-tooltip",
-  "version": "0.1.0",
+  "name": "ionic-adv-tooltip",
+  "version": "0.9.1",
   "description": "Ionic Advanced Tooltip: rich, media-friendly tooltip/popover for Ionic Angular (templates, videos, component previews).",
   "author": "Riccardo Ordine",
   "license": "MIT",

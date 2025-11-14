@@ -1,10 +1,10 @@
 # Ionic Advanced Tooltip (`@phazric/ionic-adv-tooltip`)
 
-> Rich, media-friendly tooltip/popover for **Ionic Angular**: render templates, images, videos, or even a live component preview [BETA] inside a lightweight tooltip.  
+> Rich, media-friendly tooltip/popover for **Ionic Angular**: render templates, images, videos, or even a live component preview inside a lightweight tooltip.  
 > Works on any host (`span`, `ion-item`, `ion-chip`, `ion-button`, ...).  
 > **Angular 16–20** · **Ionic 6–8**
 
-[![npm version](https://img.shields.io/npm/v/@phazric/ionic-adv-tooltip.svg?color=45CE6A&logo=npm)](https://www.npmjs.com/package/ionic-adv-tooltip)
+[![npm version](https://img.shields.io/npm/v/ionic-adv-tooltip.svg?color=45CE6A&logo=npm)](https://www.npmjs.com/package/ionic-adv-tooltip)
 ![Angular](https://img.shields.io/badge/Angular-16--20-red?logo=angular)
 ![Ionic](https://img.shields.io/badge/Ionic-6--8-blue?logo=ionic)
 ![License](https://img.shields.io/badge/License-MIT-green)
@@ -15,7 +15,7 @@
 
 - 🧩 **Drop-in directive**: `iatTooltip` (template) or `iatTooltipText` (plain text)
 - 🖼️ **Rich content**: images, videos, GIFs, arbitrary HTML
-- 🧪 **Component preview**: render any Angular component inside the tooltip [BETA]
+- 🧪 **Component preview**: render any Angular component inside the tooltip
 - 🎯 **Positioning**: `top | bottom | left | right | auto`, with `start | center | end` alignment
 - 🕒 **Timings**: open delay, close delay, optional auto-hide on touch
 - 🖱️ **Click-through by default** (tooltips don’t block target clicks)
@@ -27,13 +27,13 @@
 ## 📦 Installation
 
 ```bash
-npm i @phazric/ionic-adv-tooltip
+npm i ionic-adv-tooltip
 ```
 
 Then import the directive:
 
 ```ts
-import { AdvTooltipDirective } from '@phazric/ionic-adv-tooltip';
+import { AdvTooltipDirective } from 'ionic-adv-tooltip';
 
 @Component({
   selector: 'app-demo',
@@ -65,7 +65,7 @@ export class DemoComponent {}
 </ng-template>
 ```
 
-### 3️⃣ Component tooltip [BETA]
+### 3️⃣ Component tooltip
 ```html
 <div
   [iatEnableComponent]="true"
@@ -83,7 +83,7 @@ export class DemoComponent {}
 | ---------- | ------------ |
 | `iatTooltip` | Rich content via Angular `ng-template` (images, HTML, etc.). Use `[iatTooltip]="myTpl"`. |
 | `iatTooltipText` | Plain text tooltip content. |
-| `iatEnableComponent` | Enables live Angular component rendering inside tooltip (BETA). |
+| `iatEnableComponent` | Enables live Angular component rendering inside tooltip. |
 | `iatComponent` | Component type to render when `iatEnableComponent` is `true`. |
 | `iatComponentInputs` | Object containing inputs for the rendered component. |
 | `iatInteractive` | If `true`, tooltip is clickable; otherwise pointer-events are disabled (default). |

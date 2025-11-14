@@ -27,7 +27,7 @@ export class AdvTooltipPopoverComponent implements AfterViewInit {
   /** Optional: background override coming from directive (CSS color string) */
   @Input() bg?: string;
 
-  // ⚠️ with @if, the #host template is conditional → static: false
+  //  with @if, the #host template is conditional → static: false
   @ViewChild('host', { read: ViewContainerRef, static: false })
   hostVcr?: ViewContainerRef;
 

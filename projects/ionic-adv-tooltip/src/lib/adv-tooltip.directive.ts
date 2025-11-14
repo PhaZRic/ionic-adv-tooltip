@@ -13,7 +13,7 @@ type IatEnter = 'fade' | 'scale' | 'up' | 'right' | 'pop';
 type IatExit  = 'fade' | 'scale' | 'down' | 'left' | 'shrink';
 
 @Directive({
-  selector: '[iatTooltip],[iatTooltipText],[appTooltip],[appTooltipText]',
+  selector: '[iatTooltip],[iatTooltipText],[appTooltip],[appTooltipText],[iatEnableComponent],[iatComponent]',
   standalone: true,
   providers: [PopoverController]
 })
